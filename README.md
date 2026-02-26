@@ -1,273 +1,356 @@
 <h1 align="center"> HypeLink (MeshX) </h1>
-<div align="center"> 
- <img src="https://github.com/user-attachments/assets/807a5735-e104-4bbe-adf5-b7a47830b0cf" width="400"/>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/807a5735-e104-4bbe-adf5-b7a47830b0cf" width="400"/>
 </div>
 
-> 이름 ‘HypeLink’는 “트렌드를 연결하다 (Hype + Link)”라는 의미를 담고 있습니다.  
-> **브랜드와 소비자, 그리고 본사와 매장을 하나의 링크로 잇는** B2B 오프라인 매장 자동화 관리 플랫폼입니다.
+<br>
+<br>
+
+## B2B 오프라인 직영점 통합 관리 플랫폼 — 본사·매장·POS를 단일 네트워크로 연결합니다.
 
 ---
 
-## 🫂 팀원 소개
+## 📋 프로젝트 개요
+
+| 항목 | 내용 |
+|------|------|
+| **프로젝트명** | HypeLink |
+| **팀명** | MeshX |
+| **진행 기간** | 2025.09 ~ 2025.10 |
+| **팀 인원** | 4명 |
+| **내 역할** | DB 설계 · Git Actions 및 요구사항 정리 / 문서 작성 · 코딩 컨벤션 수립 / Frontend 템플릿 선정 · UI 개발 · UI 품질 개선 |
+| **핵심 기술** | Vue 3, Pinia, STOMP.js, Leaflet, MariaDB, Spring Boot, Kubernetes |
+| **서비스 유형** | B2B SPA (본사/서브관리자/가맹점 대시보드 + POS 단말기) |
+
+---
+
+## 🕵️ 팀원 소개
+
 <table align="center">
   <tbody>
     <tr>
-      <td align="center"><a href="https://github.com/kbw07"><img src="https://github.com/user-attachments/assets/706e1875-8a3d-4d3e-9a19-d344d6866f23" width="100px;" alt=""/><br /><sub><b> 강병욱 </b></sub></a><br /></td>
-      <td align="center"><a href="https://github.com/flionme"><img src="https://github.com/user-attachments/assets/08e896f8-c18f-454a-a44a-2337f585e77f" width="100px;" alt=""/><br /><sub><b> 김성인 </b></sub></a><br /></td>
-      <td align="center"><a href="https://github.com/David9733"><img src="https://github.com/user-attachments/assets/4d6ad9a1-ac42-4f36-9259-2b988493cf85" width="100px;" alt=""/><br /><sub><b> 이시욱 </b></sub></a><br /></td>
-      <td align="center"><a href="https://github.com/raccoon-coding"><img src="https://github.com/user-attachments/assets/90a33761-0bd8-4b73-a12a-1e24f0c5a6a9" width="100px;" alt=""/><br /><sub><b> 최민성 </b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/kbw07"><img src="https://github.com/user-attachments/assets/706e1875-8a3d-4d3e-9a19-d344d6866f23" width="100px;" alt=""/><br /><sub><b>강병욱</b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/flionme"><img src="https://github.com/user-attachments/assets/08e896f8-c18f-454a-a44a-2337f585e77f" width="100px;" alt=""/><br /><sub><b>김성인</b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/David9733"><img src="https://github.com/user-attachments/assets/4d6ad9a1-ac42-4f36-9259-2b988493cf85" width="100px;" alt=""/><br /><sub><b>이시욱</b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/raccoon-coding"><img src="https://github.com/user-attachments/assets/90a33761-0bd8-4b73-a12a-1e24f0c5a6a9" width="100px;" alt=""/><br /><sub><b>최민성</b></sub></a><br /></td>
     </tr>
   </tbody>
 </table>
 
 ---
 
-# 🎬 주문·재고 관리 시스템
+## 🎯 프로젝트 목적
 
-## 🎯 프로젝트 소개
+> **"오프라인 매장 관리의 복잡함을 데이터 중심으로 단순화한다."**
 
-**HypeLink**는 스파(SPA) 브랜드와 오프라인 직영점을 위한 **B2B 통합 매장 관리 솔루션**입니다.  
-본사와 매장을 하나의 네트워크로 연결하여, **주문·재고·물류·매출·고객 데이터**를 실시간으로 통합 관리할 수 있도록 설계되었습니다.
-
----
-
-## 📘 프로젝트 개요
-
-### 🔹 배경
-최근 온라인 패션 브랜드들이 오프라인 매장을 확장하며 **옴니채널 전략**을 강화하고 있습니다.  
-그러나 오프라인 운영 과정에서는 다음과 같은 문제들이 자주 발생합니다.
-
-1. 점포별로 분산된 재고로 인해 **본사 차원의 통합 파악 어려움**
-2. 물류 배송 상태를 실시간으로 추적하지 못해 **납기 지연 및 재고 손실 발생**
-3. 매장별 POS·고객 데이터의 **파편화로 의사결정 지연**
-4. 본사와 가맹점 간 **비효율적인 소통 채널 부재**
-
-이러한 문제는 운영 효율성 저하와 매출 감소로 직결됩니다.
+| 구분 | 내용 |
+|------|------|
+| **기존 방식의 문제** | 점포별로 재고·POS·고객 데이터가 분산되어 본사가 통합 현황을 파악하기 어려움; 본사–가맹점 간 소통 채널 부재로 의사결정 지연 |
+| **HypeLink의 접근** | GPS 물류 추적 · POS 헬스체크 · 고객 데이터 분석 · WebSocket 실시간 소통을 하나의 플랫폼으로 통합 |
+| **기대 효과** | 재고 손실 최소화, 장애 대응 속도 향상, 본사–매장 간 정보 비대칭 해소 |
 
 ---
 
-### 🔹 솔루션 개요
-MeshX 팀은 이러한 문제를 해결하기 위해  
-**GPS 기반 물류 추적, POS Health 모니터링, 고객 데이터 분석, 실시간 소통 허브**를 통합한  
-**HypeLink 플랫폼**을 설계했습니다.
+## 🙋 내 기여
 
-- 🚚 **실시간 물류 추적**: GPS 기반 배송 경로·도착 예측 실시간 시각화
-- 🏢 **POS Health 모니터링**: 각 매장의 POS 상태를 본사에서 실시간 점검
-- 👥 **고객 데이터 통계**: 연령·구매 성향 분석으로 맞춤형 마케팅 지원
-- 💬 **실시간 커뮤니케이션 허브**: 본사–직영점 간 공지·이슈·요청 즉시 공유
+### 1단계 · DB 설계
+
+- **요구사항 정의서 기반 도메인 분석**: 기획서·요구사항 정의서(`doc/HypeLink 요구사항 정의서.pdf`)를 검토하여 핵심 엔티티(매장, 상품, 재고, 발주, 배송, POS, 고객, AS 등)를 식별하고 관계를 정의
+- **ERD 설계 및 산출**: 정규화(1NF~3NF) 원칙에 따라 테이블 간 외래키·인덱스 설계; 최종 ERD를 `doc/hypelinkERD.png`로 문서화
+- **데이터 모델 기반 API 협의**: 설계된 스키마를 기준으로 Backend와 API 요청/응답 구조를 사전 협의하여 프론트엔드 연동 시 불일치 최소화
+- (구체적인 테이블 수·핵심 관계 설명은 아래 "빈칸 체크리스트" 참고)
+
+### 2단계 · Frontend 개발
+
+- **UI 템플릿 선정**: Bootstrap 5.3.3 기반 어드민 템플릿을 선정하고 Vue 3 프로젝트 구조에 맞게 커스터마이징 기준을 수립하여 팀 전체 UI 일관성 확보
+- **대시보드 앱 (`hypelinkMain`) 구조 설계**: 도메인별 라우트 파일 분리(`baseRoutes`, `storeRoutes`, `inventoryRoutes` 등 18개) 및 역할 기반 접근 제어(`permissions.js`) 구현
+- **POS 앱 (`hypelinkPos`) 화면 구현**: 결제(PortOne SDK 연동), 주문 내역, 재고 조회, 공지사항 4개 화면 구현
+- **역할별 대시보드 분기**: 본사(ADMIN), 서브관리자(MANAGER), 가맹점(BRANCH_MANAGER) 역할에 따라 `AdminDashboard.vue` / `StoreOwnerDashboard.vue`를 동적 렌더링
+- **실시간 지도 기반 배송 추적**: Leaflet 1.9.4를 활용한 GPS 기사 위치 시각화 및 Geocoding API 연동
+- **WebSocket 메신저**: STOMP.js(`@stomp/stompjs 7.2.0`)로 본사–가맹점 간 실시간 요청/응답 채널 구현
+- **데이터 시각화**: ApexCharts(vue3-apexcharts 1.5.3)로 매출·재고·고객 통계 차트 구성
+- **시나리오 기반 UI 검토**: 각 역할별 사용 흐름을 시나리오로 정리하고 화면 오류·UX 개선 사항 이슈화 및 수정
+- **UI 품질 개선**: 각 역할별 사용 흐름을 시나리오로 점검하여 화면 오류·레이아웃 불일치·UX 흐름 단절 사항을 이슈로 등록하고 수정
+
+### 3단계 · 협업·문서화
+
+- **요구사항 우선 정리**: 프로젝트 착수 시점에 요구사항 정의서(`doc/HypeLink 요구사항 정의서.pdf`)를 기반으로 기능 우선순위를 팀 내 합의하고 WBS로 일정 구조화
+- **Git Actions 및 브랜치 전략 수립**: `main` / `develop` / `{팀원명}/BRANCH` 구조로 브랜치 분기 규칙 정의; GitHub Actions 기반 자동화 워크플로우 구성; PR 단위 코드 리뷰 체계 운영
+- **코딩 컨벤션(Coding Convention) 수립**: `[FEAT]` / `[FIX]` / `[REFA]` / `[DEV]` 커밋 태그 규칙, 파일명·컴포넌트명·스토어명 네이밍 규칙을 문서화하여 팀 전체에 공유·적용
+- **문서 작성 및 체계 구성**: WBS, 요구사항 정의서, 피그마, ERD, 시스템 아키텍처 문서를 `/doc` 폴더에 통합 관리; README 초안 작성 및 지속적 업데이트
+- **CI/CD 파이프라인 문서화**: GitHub Wiki에 Jenkins + Kaniko + Kubernetes 기반 파이프라인 운영 절차 작성
 
 ---
 
 ## ✨ 주요 기능
 
-### 🧭 GPS 기반 물류 추적
-- 기사별 위치 데이터 기반 실시간 배송 경로 모니터링
-- 지오코딩(Geocoding API)을 활용한 매장 좌표 자동 변환
-- 근접 매장 탐색 및 최적 경로 계산
-
-### 🏢 POS Health 모니터링
-- 각 매장의 POS기 상태(정상/고장/대기)를 주기적 HealthCheck
-- 비정상 응답 시 원격 접속 → AS 자동 요청 연계
-- 고장 이력, 수리 내역, 평균 처리시간 보고서 자동 생성
-
-### 👥 고객 데이터 관리 및 통계 시스템
-- POS 결제 데이터를 기반으로 연령·성별·상품 카테고리별 매출 분석
-- 인기/비인기 상품 랭킹, 재구매율, 시간대별 트래픽 분석
-- 본사 대시보드에서 매출 패턴 시각화 및 프로모션 효과 분석
-
-### 📦 재고 및 매출 관리
-- 본사–직영점 간 재고 실시간 동기화 및 자동 발주 시스템
-- 판매·입고·반품 등 이벤트 기반 재고 변동 자동 기록
-- 가중치 기반 우선순위 출고(판매량이 높은 매장 우선)
-
-### 💬 본사–직영점 실시간 커뮤니케이션
-- WebSocket 기반 실시간 요청/응답 채널
-- 매장에서 AS·지원요청 전송 시 본사 즉시 알림
-- 공지사항, 이벤트, 업데이트 사항의 즉각적 공유
-
-### 🧰 AS 관리 및 원격 지원
-- HealthCheck 3회 실패 시 자동 AS 요청 등록
-- 원격 접속 실패 시 현장 수리 기사 자동 배정
-- AS 진행 상태(요청–접수–완료) 실시간 조회
+| 기능 | 설명 |
+|------|------|
+| 🚚 GPS 기반 물류 추적 | 기사 위치 실시간 시각화, Geocoding API로 매장 좌표 자동 변환, 근접 매장 탐색 |
+| 🏢 POS Health 모니터링 | 매장별 POS 상태(정상/고장/대기) 주기적 체크, 비정상 시 원격 접속·AS 자동 연계 |
+| 👥 고객 데이터 분석 | 연령·성별·카테고리별 매출 분석, 인기상품 랭킹, 시간대별 트래픽 시각화 |
+| 📦 재고·발주 관리 | 본사–가맹점 재고 실시간 동기화, 가중치 기반 우선순위 출고, 자동 발주 |
+| 💬 실시간 커뮤니케이션 | WebSocket(STOMP) 기반 본사–가맹점 메신저, 공지사항·AS 요청 즉시 전달 |
+| 🧰 AS 관리 | HealthCheck 3회 실패 시 자동 AS 등록, 요청→접수→완료 상태 실시간 조회 |
+| 💳 POS 결제 | PortOne SDK 기반 일반/회원 결제, 결제 내역 및 재고 조회 |
 
 ---
 
-## 🧭 프로젝트 시나리오
+## 🔄 사용자 흐름
 
-| 구분 | 시나리오 설명 | 기대 효과 |
-|------|----------------|------------|
-| 물류 추적 | GPS 데이터를 기반으로 기사 위치·도착 시간 실시간 추적 | 배송 지연율 감소, 고객 신뢰 향상 |
-| 재고 관리 | 자동 입출고 및 반품 처리 시스템 구축 | 재고 회전율 향상, 손실 최소화 |
-| POS 관리 | 본사에서 각 매장 POS 상태 모니터링 및 알림 | 장애 대응 속도 향상 |
-| 고객 분석 | 연령대·구매패턴별 매출 분석 및 시각화 | 타겟 마케팅 효율성 증대 |
-| 실시간 소통 | WebSocket 기반 공지/이슈 공유 채널 운영 | 현장 대응력 강화 및 협업 효율 개선 |
+### 역할별 접근 시나리오
+
+| 역할 | 진입점 | 주요 행동 흐름 | 핵심 화면 |
+|------|--------|--------------|----------|
+| **본사 (ADMIN)** | `meshx.store` 로그인 | 전체 매장 현황 확인 → 발주 승인 → POS 상태 점검 → 고객 분석 → 프로모션 생성 → 공지 발송 | 대시보드, 매장관리, 발주서, POS헬스, 통합분석, 쿠폰관리 |
+| **서브관리자 (MANAGER)** | `meshx.store` 로그인 | 재고·배송 현황 조회 → 배송 기사 배정 → 매출 분석 → AS 처리 | 배송추적, 창고재고, 매출관리, AS관리 |
+| **가맹점 (BRANCH_MANAGER)** | `meshx.store` 로그인 | 내 매장 재고 확인 → 발주 요청 → AS 신청 → 프로모션 조회 | 내매장, 재고관리, 발주서, AS신청 |
+| **POS 단말기** | `meshx.shop` 로그인 | 상품 선택 → 결제(일반/회원) → 결제 내역 확인 → 공지 조회 | POS결제, 주문내역, 재고조회, 공지사항 |
+
+### POS 결제 흐름
+
+```
+상품 선택 → 수량 조정 → 결제 방법 선택(현금/카드/회원) → PortOne 결제 처리 → 영수증 출력
+```
+
+### 본사 AS 처리 흐름
+
+```
+가맹점 AS 신청(AsCreateView) → 본사 접수(AsListView) → 상태 업데이트(AsDetailView) → 기사 배정 → 완료 처리
+```
 
 ---
 
-## 🛠 기술 스택
+## 🛠️ 기술 스택
 
-### ✔️Frontend
-![Vue.js](https://img.shields.io/badge/vue.js-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)
-![Pinia](https://img.shields.io/badge/Pinia-ffd859?style=for-the-badge&logoColor=black)
-![Socket.io](https://img.shields.io/badge/Socket.io-black?style=for-the-badge&logo=socketdotio&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
-![Axios](https://img.shields.io/badge/Axios-671ddf?style=for-the-badge&logo=axios&logoColor=white)
-![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+### Frontend — 대시보드 (`hypelinkMain`)
 
-### ✔️Backend
+| 기술 | 버전 | 용도 |
+|------|------|------|
+| Vue.js | 3.4.21 | UI 프레임워크 |
+| Vue Router | 4.3.2 | SPA 라우팅 |
+| Pinia | 2.1.7 | 전역 상태 관리 |
+| Axios | 1.12.2 | HTTP 통신 |
+| @stomp/stompjs | 7.2.0 | WebSocket 메신저 |
+| Leaflet | 1.9.4 | GPS 지도 시각화 |
+| ApexCharts (vue3-apexcharts) | 1.5.3 | 데이터 차트 |
+| Bootstrap | 5.3.3 | UI 컴포넌트 |
+| Vite | 5.2.0 | 빌드 도구 |
+
+### Frontend — POS (`hypelinkPos`)
+
+| 기술 | 버전 | 용도 |
+|------|------|------|
+| Vue.js | 3.5.22 | UI 프레임워크 |
+| Vue Router | 4.5.1 | 라우팅 |
+| Pinia | 3.0.3 | 상태 관리 |
+| @portone/browser-sdk | 0.0.9 | 결제 처리 |
+| Axios | 1.12.2 | HTTP 통신 |
+| Vite | 7.1.7 | 빌드 도구 |
+
+### Backend
+
 ![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
 ![Spring Security](https://img.shields.io/badge/Spring%20Security-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white)
-![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=white)
-![Gradle](https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white)
 ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
 ![QueryDSL](https://img.shields.io/badge/QueryDSL-4479A1?style=for-the-badge&logoColor=white)
-![Lombok](https://img.shields.io/badge/Lombok-BC4125?style=for-the-badge&logoColor=white)
+![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=white)
 
-### ✔️Database
+### Database & Infra
+
 ![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)
-
-### ✔️Infra
 ![AWS S3](https://img.shields.io/badge/Amazon%20S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white)
-![Kaniko](https://img.shields.io/badge/Kaniko-2A2E35?style=for-the-badge&logo=docker&logoColor=white)
 ![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![Kaniko](https://img.shields.io/badge/Kaniko-2A2E35?style=for-the-badge&logo=docker&logoColor=white)
 
 ---
-## ⚙️ 도메인 주소
-### <a href="https://www.meshx.shop">POS기 바로가기</a>
 
+## 🗄️ DB 아키텍처
 
+### ERD
 
-🪪 ID : pos.​gangnam.​01@hypelink.​com (강남가맹점의 1POS기) <br/>🔑 PASSWORD : 1234
+![HypeLink ERD](./doc/hypelinkERD.png)
 
+> 주요 테이블: 매장(Store), 상품(Product), 재고(Inventory), 발주(PurchaseOrder), 배송(Shipment), POS기기(PosDevice), 고객(Customer), AS(ServiceRequest) 등
+> (테이블 수·핵심 관계 상세 설명은 빈칸 체크리스트 참고 — 본인 기여 내용으로 보완 필요)
 
-### <a href="https://www.meshx.store">본사/서브관리자/가맹점 대시보드 바로가기 </a>
+---
 
+## 🖥️ 시스템 아키텍처
 
-🪪 본사 ID : hq@company.​com <br/>🔑 PASSWORD : 1234
+### V1. 모놀리식
 
+![V1 시스템 아키텍처](./doc/시스템%20아키텍처.png)
 
-🪪 서브관리자 ID : manager@hype​link.com <br/>🔑 PASSWORD : 1234
+### V2. MSA
 
+![V2 MSA 아키텍처](./doc/MSA%20시스템%20아키텍처%20.png)
 
-🪪 직영점 ID : gangnam@hype​link.com (강남 직영점) <br/>🔑 PASSWORD : 1234
+---
+
+## 🤔 기술 선택 이유
+
 <details>
- 
-<summary>POS기 작동 영상 </summary>
-<div markdown="1">
+<summary>Database — MariaDB</summary>
 
-## POS기 결제 
-![pos_gif](https://github.com/user-attachments/assets/086e6512-c76e-430a-8061-11aacb365e50)
+- MySQL과 완전 호환되는 오픈소스 RDBMS로 팀 내 학습 비용이 낮음
+- 매장·재고·발주·고객 데이터가 명확한 관계(FK)로 연결되는 구조에 관계형 DB가 적합하다고 판단
+- QueryDSL과 결합하여 복합 조건 통계 쿼리(연령별 매출, 재고 회전율 등)를 타입 안전하게 작성
 
-## POS기 회원 결제
-![포스기 회원 결제](https://github.com/user-attachments/assets/637100dd-1409-4bb3-90f7-d89f04595ca8)
-
-## POS기 결제 내역
-![포스기 결제내역](https://github.com/user-attachments/assets/7ee47852-b185-4ad7-8424-19bc6b10fbf1)
-
-## POS기 공지사항
-![포스기 공지사항](https://github.com/user-attachments/assets/2a66ebf2-1099-422f-9600-cc927fe540d9)
-
-</div>
 </details>
 
 <details>
-<summary>관리자 페이지 작동 영상 </summary>
-<div markdown="1">
+<summary>Frontend — Vue 3 + Pinia</summary>
 
-## 가맹점 로그인
-![가맹점 로그인 화면](https://github.com/user-attachments/assets/f02bf0e3-1915-4739-a63b-775359e4bb64)
+- **Vue 3 Composition API**: 기능 단위로 로직을 분리하여 역할별 대시보드(AdminDashboard / StoreOwnerDashboard)처럼 재사용 컴포넌트 구성이 용이
+- **Pinia**: Vuex 대비 간결한 API와 DevTools 지원으로 인증(auth), 권한(permissions), 모달(modal), 토스트(toast) 등 복수 스토어를 명확히 분리해 관리
+- **@stomp/stompjs**: SockJS 없이도 WebSocket 위에서 구독·발행 패턴을 구현할 수 있어 본사–가맹점 실시간 메신저에 채택
+- **Leaflet**: 순수 JS 지도 라이브러리로 번들 크기가 작고, GPS 좌표 기반 마커/경로 렌더링이 간단
 
-## 본사 로그인
+</details>
+
+<details>
+<summary>Collaboration — GitHub Flow + 문서화 체계</summary>
+
+- `main` / `develop` / `{이름}/BRANCH` 3단계 브랜치 전략으로 기능 개발과 통합을 분리
+- PR 기반 코드 리뷰로 병합 전 오류 사전 차단
+- `/doc` 폴더에 기획서·ERD·WBS·피그마·아키텍처를 통합 관리하여 팀원 간 정보 공유 일원화
+
+</details>
+
+---
+
+## 🔑 핵심 구현 포인트
+
+| 항목 | 위치 | 설명 |
+|------|------|------|
+| 역할 기반 접근 제어 | `src/stores/permissions.js` | ADMIN / MANAGER / BRANCH_MANAGER 3개 역할별 허용 라우트 목록을 Pinia 스토어로 중앙 관리; 라우터 가드에서 `canAccess()` 호출로 페이지 접근 차단 |
+| 도메인 분리 라우팅 | `src/router/routes/` (18개 파일) | 기능별 라우트 파일을 분리(`inventoryRoutes`, `asRoutes` 등)하여 단일 파일 비대화 방지 |
+| WebSocket 메신저 | `src/views/MessengerView.vue` | STOMP 프로토콜로 채널 구독, 본사·가맹점 간 실시간 요청/응답; 연결 해제 시 자동 재연결 처리 |
+| GPS 배송 추적 지도 | `src/views/ShipmentTrackingView.vue` | Leaflet으로 기사 실시간 위치 마커 표시, Geocoding API로 매장 주소→좌표 변환 |
+| 통합 분석 대시보드 | `src/views/analytics/` | 매출·주문·재고·상품·매장 5개 분석 탭, ApexCharts 차트 컴포넌트 재사용 구조 |
+| POS 결제 처리 | `hypelinkPos/src/views/POSView.vue` | PortOne Browser SDK(`@portone/browser-sdk 0.0.9`)로 일반/회원 결제 처리; uuid로 주문 고유 ID 생성 |
+| ERD 기반 스키마 설계 | `doc/hypelinkERD.png` | 요구사항 정의서 기반 엔티티 도출 → 정규화 → FK/인덱스 설계 → ERD 문서화 |
+
+### 주요 화면
+
+<details>
+<summary>📺 관리자 대시보드 화면 보기</summary>
+
+#### 본사 로그인
 ![본사 관리자](https://github.com/user-attachments/assets/3d5406f6-9176-4b58-b819-286af2814787)
 
-## 서브관리자 로그인
-![서브관리자 로그인](https://github.com/user-attachments/assets/cbcf828b-a845-4e3f-bb4e-94b2aca982d8)
-
-## 웹소켓 메신저
-![웹소켓 메신저](https://github.com/user-attachments/assets/32b0c983-74b9-49bb-b9e4-d12f7ef0cc47)
-
-## 사용자 추가
-![사용자 추가](https://github.com/user-attachments/assets/a020ee21-5df4-4ace-98d4-4789e54c43c3)
-
-## 본사 공지사항 작성
-![공지사항 작성](https://github.com/user-attachments/assets/f0b91cb2-6663-4988-a1bb-8a6d81788f06)
-
-## AS/고장 접수처리
-![AS](https://github.com/user-attachments/assets/1c9672ca-952e-4b9a-8f49-81fa4743d3b6)
-
-## 고객분석
+#### 고객 분석
 ![고객분석](https://github.com/user-attachments/assets/5c9d7b18-90b7-4ba4-a467-02744d73388d)
 
-## 매출 관리
-![매출관리](https://github.com/user-attachments/assets/3f8ccace-f9ce-4a5c-95ad-3c3f7db3873a)
+#### 전체 배송 추적
+![전체배송추척](https://github.com/user-attachments/assets/dbcec5e0-5382-4e53-9e7b-87846d9f0b49)
 
-## 상품 관리
-![상품관리 02](https://github.com/user-attachments/assets/5cb08fb9-ff69-401c-8d30-bf529e0514d7)
+#### AS 접수 처리
+![AS](https://github.com/user-attachments/assets/1c9672ca-952e-4b9a-8f49-81fa4743d3b6)
 
-## 재고 관리
-![재고관리](https://github.com/user-attachments/assets/d0866639-79ef-4521-88fe-4306829088b2)
-
-## 전체 배송 추적
-![전체배송추척품질다운](https://github.com/user-attachments/assets/dbcec5e0-5382-4e53-9e7b-87846d9f0b49)
-
-## 창고 재고 관리
-![창고재고관리](https://github.com/user-attachments/assets/e90ba0c6-55c7-4b8e-b4e4-355224bdc313)
-
-## 쿠폰 관리
-![쿠폰관리 동영상](https://github.com/user-attachments/assets/937cf216-b828-4f9d-b085-d2a11c945a9f)
-
-## 통합 분석
-![통합분석 동영상](https://github.com/user-attachments/assets/cddc865a-d81d-44cc-ac2d-43803f4b4ea5)
-
-## 프로모션 관리
-![프로모션관리](https://github.com/user-attachments/assets/53bdd4b0-0f5a-40f3-95b5-2b917ecbd227)
-
-</div>
 </details>
-<br/>
 
-## 🧩 시스템 아키텍처
+<details>
+<summary>💳 POS 단말기 화면 보기</summary>
 
-### V1. 모놀리식 시스템 아키텍쳐
-<img width="7431" height="5973" alt="c8f1e49bdf603afd" src="https://github.com/user-attachments/assets/48ffca35-6a8c-47fc-99ee-c1471f15846b" />
+#### POS 결제
+![pos_gif](https://github.com/user-attachments/assets/086e6512-c76e-430a-8061-11aacb365e50)
 
+#### 회원 결제
+![포스기 회원 결제](https://github.com/user-attachments/assets/637100dd-1409-4bb3-90f7-d89f04595ca8)
 
-### V2. MSA 시스템 아키텍쳐
-<img width="9311" height="7528" alt="MSA_" src="https://github.com/user-attachments/assets/f6177763-81cd-4ab5-af80-407d28bc2fe2" />
+#### 결제 내역
+![포스기 결제내역](https://github.com/user-attachments/assets/7ee47852-b185-4ad7-8424-19bc6b10fbf1)
 
-
-
-<br/>
-
-## ⚙️ CI/CD 파이프라인 문서
-- <a href="https://github.com/beyond-sw-camp/be17-fin-MeshX-HypeLink-FE/wiki/HypeLink-CI-CD-%ED%8C%8C%EC%9D%B4%ED%94%84%EB%9D%BC%EC%9D%B8-%EB%AC%B8%EC%84%9C">파이프라인 문서 보기</a>
-<br/>
-
-## 🧩 피그마 
-- <a href="https://www.figma.com/design/apT7cRFWE4TS6WcdayD1Tn/HypeLink?node-id=0-1&p=f&t=s8E79kwSqskjhKOT-0">피그마 주소</a>
-
-
-- <a href="https://github.com/beyond-sw-camp/be17-fin-MeshX-HypeLink-FE/blob/main/doc/Fiqma.png">피그마 보기</a>
-<br/>
-
-## ⚙️ 기술적 선택과 설계 배경
-- **Spring Boot MVC** 구조로 서비스·도메인·컨트롤러 명확히 분리
-- **JWT + Spring Security**로 안전한 인증/인가 구조 설계
-- **QueryDSL**을 통한 복합 조건 검색 및 통계 쿼리 최적화
-- **Kaniko + Jenkins + Kubernetes** 기반 CI/CD 파이프라인 구축
-- **Blue-Green Deployment**로 무중단 배포 실현
-- **WebSocket 기반 실시간 통신 서버**로 요청–응답 딜레이 최소화
+</details>
 
 ---
 
-## 🚀 서비스 목표
-> “HypeLink는 오프라인 매장 관리의 복잡함을 데이터 중심으로 단순화한다.”
+## 🔧 트러블슈팅 / 개선 경험
 
-본사와 매장이 실시간으로 연결되고,  
-모든 주문·재고·물류·POS·고객 정보가 투명하게 공유되는 환경을 구축함으로써  
-**비용 절감, 매출 성장, 협업 효율성**을 동시에 실현하는 것이 목표입니다.
+### DB 설계 — (구체적 사례 입력 필요)
+
+| 구분 | 내용 |
+|------|------|
+| **문제** | (예: 재고 테이블 설계 시 매장별/창고별 재고를 단일 테이블로 구성했을 때 쿼리 복잡도 증가) |
+| **원인** | (예: 엔티티 구분 없이 타입 컬럼으로 분기 → JOIN 시 Full Scan 발생) |
+| **해결** | (예: 매장재고(StoreInventory)와 창고재고(WarehouseInventory)를 별도 테이블로 분리, 인덱스 추가) |
+| **결과** | (예: 쿼리 단순화 및 가독성 향상 / 측정 수치 있으면 기재, 없으면 생략) |
+
+### Frontend — 역할별 권한 관리 누락 문제
+
+| 구분 | 내용 |
+|------|------|
+| **문제** | 가맹점 계정으로 본사 전용 URL에 직접 접근 시 권한 오류 없이 화면이 노출됨 |
+| **원인** | 사이드바에서 메뉴를 숨기는 것만으로 접근 제어를 구현했고, 라우터 가드에 역할 검증이 없었음 |
+| **해결** | `permissions.js`에 역할별 허용 라우트 목록을 정의하고, `router.beforeEach`에서 `canAccess()` 호출로 미인가 접근 시 대시보드로 리다이렉트 |
+| **결과** | URL 직접 입력으로 인한 권한 우회 차단; 역할 추가 시 `permissions.js` 수정만으로 확장 가능한 구조 확보 |
+
+### 협업 — (구체적 사례 입력 필요)
+
+| 구분 | 내용 |
+|------|------|
+| **문제** | (예: 초기에 브랜치 전략 없이 작업하여 develop 병합 시 충돌 다수 발생) |
+| **원인** | (예: 팀원별 작업 범위가 겹치는 파일이 존재했고 PR 전 동기화 없이 진행) |
+| **해결** | (예: `{이름}/BRANCH` 규칙과 PR 필수 리뷰 체계 도입, 작업 전 develop fetch 규칙 공유) |
+| **결과** | (예: 이후 병합 충돌 건수 감소 / 측정 수치 있으면 기재) |
 
 ---
+
+## 🚀 실행 및 테스트
+
+### 대시보드 앱 (`hypelinkMain`)
+
+```bash
+cd hypelinkMain
+npm install
+npm run dev       # 개발 서버 (http://localhost:5173)
+npm run build     # 프로덕션 빌드
+```
+
+### POS 앱 (`hypelinkPos`)
+
+```bash
+cd hypelinkPos
+npm install
+npm run dev       # 개발 서버
+npm run build     # 프로덕션 빌드
+```
+
+### 테스트 계정
+
+| 역할 | ID | PW |
+|------|----|----|
+| 본사 (ADMIN) | `hq@company.com` | `1234` |
+| 서브관리자 (MANAGER) | `manager@hypelink.com` | `1234` |
+| 가맹점 (BRANCH_MANAGER) | `gangnam@hypelink.com` | `1234` |
+| POS 단말기 | `pos.gangnam.01@hypelink.com` | `1234` |
+
+### Docker (Nginx)
+
+```bash
+docker build -t hypelink-front .
+docker run -p 80:80 hypelink-front
+```
+
+---
+
+## 📎 참고자료
+
+| 자료 | 링크 |
+|------|------|
+| 피그마 디자인 | [Figma 바로가기](https://www.figma.com/design/apT7cRFWE4TS6WcdayD1Tn/HypeLink?node-id=0-1&p=f&t=s8E79kwSqskjhKOT-0) |
+| 피그마 캡처 | [doc/Fiqma.png](./doc/Fiqma.png) |
+| ERD | [doc/hypelinkERD.png](./doc/hypelinkERD.png) |
+| 요구사항 정의서 | [doc/HypeLink 요구사항 정의서.pdf](./doc/HypeLink%20요구사항%20정의서.pdf) |
+| 기획서 | [doc/HypeLink 기획서.pdf](./doc/HypeLink%20기획서.pdf) |
+| WBS | [doc/WBS.pdf](./doc/WBS.pdf) |
+| V1 시스템 아키텍처 | [doc/시스템 아키텍처.png](./doc/시스템%20아키텍처.png) |
+| V2 MSA 아키텍처 | [doc/MSA 시스템 아키텍처.png](./doc/MSA%20시스템%20아키텍처%20.png) |
+| CI/CD 파이프라인 문서 | [GitHub Wiki](https://github.com/beyond-sw-camp/be17-fin-MeshX-HypeLink-FE/wiki/HypeLink-CI-CD-%ED%8C%8C%EC%9D%B4%ED%94%84%EB%9D%BC%EC%9D%B8-%EB%AC%B8%EC%84%9C) |
+| 대시보드 서비스 | [meshx.store](https://www.meshx.store) |
+| POS 서비스 | [meshx.shop](https://www.meshx.shop) |
