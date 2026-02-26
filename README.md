@@ -4,8 +4,6 @@
   <img src="https://github.com/user-attachments/assets/807a5735-e104-4bbe-adf5-b7a47830b0cf" width="400"/>
 </div>
 
-<br>
-<br>
 
 ## 한 줄 소개
 
