@@ -17,9 +17,8 @@
 |------|------|
 | **진행 기간** | 2025.09 ~ 2025.10 |
 | **팀 인원** | 4명 |
-| **내 역할** | 기획·설계 (DB · 요구사항 · 문서) / 협업 (Git Actions · 코딩 컨벤션) / 개발 (Frontend UI) |
-| **핵심 기술** | Vue 3, Pinia, STOMP.js, Leaflet, MariaDB, Spring Boot, Kubernetes |
-| **서비스 유형** | B2B SPA (본사/서브관리자/가맹점 대시보드 + POS 단말기) |
+| **내 역할** | DB 설계(ERD/요구사항) · POS 공지 이벤트 UI 설계 · UI 품질 개선 · Git Actions 관리 · 코딩 컨벤션 확립 |
+| **핵심 기술** | Vue 3, MariaDB, GitHub Actions, Gemini CLI, Claude CLI |
 
 ---
 
