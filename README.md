@@ -81,7 +81,7 @@
 
 ## ✨ 주요 기능
 
-- 택배기사 실시간 위치 시각화 및 GPS 물류 추적
+- 기사별 스마트 디바이스 GPS 실시간 추적 및 매장 도착 예상 시간(ETA) 제공
 - 매장별 POS 상태 조회 및 고장 접수·처리 상태 추적
 - 연령·성별·카테고리별 고객 매출 분석 및 인기상품 랭킹
 - 본사와 가맹점 재고 실시간 동기화 및 발주
@@ -254,7 +254,7 @@
 | 역할 기반 접근 제어 | `src/stores/permissions.js` | ADMIN / MANAGER / BRANCH_MANAGER 3개 역할별 허용 라우트 목록을 Pinia 스토어로 중앙 관리; 라우터 가드에서 `canAccess()` 호출로 페이지 접근 차단 |
 | 도메인 분리 라우팅 | `src/router/routes/` (18개 파일) | 기능별 라우트 파일을 분리(`inventoryRoutes`, `asRoutes` 등)하여 단일 파일 비대화 방지 |
 | WebSocket 메신저 | `src/views/MessengerView.vue` | STOMP 프로토콜로 채널 구독, 본사·가맹점 간 실시간 요청/응답; 연결 해제 시 자동 재연결 처리 |
-| GPS 배송 추적 지도 | `src/views/ShipmentTrackingView.vue` | Leaflet으로 기사 실시간 위치 마커 표시, Geocoding API로 매장 주소→좌표 변환 |
+| GPS 배송 추적 지도 | `src/views/ShipmentTrackingView.vue` | 기사별 스마트 디바이스에서 GPS 좌표를 수신하여 Leaflet 지도에 실시간 마커 표시; Geocoding API로 매장 주소→좌표 변환 후 현재 위치 기준 도착 예상 시간(ETA) 계산 |
 | 통합 분석 대시보드 | `src/views/analytics/` | 매출·주문·재고·상품·매장 5개 분석 탭, ApexCharts 차트 컴포넌트 재사용 구조 |
 | POS 결제 처리 | `hypelinkPos/src/views/POSView.vue` | PortOne Browser SDK(`@portone/browser-sdk 0.0.9`)로 일반/회원 결제 처리; uuid로 주문 고유 ID 생성 |
 | ERD 기반 스키마 설계 | `doc/hypelinkERD.png` | 요구사항 정의서 기반 엔티티 도출 → 정규화 → FK/인덱스 설계 → ERD 문서화 |
