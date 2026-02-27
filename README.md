@@ -145,7 +145,7 @@
 
 **DB** : MariaDB
 
-**Frontend** : Vue.js 3.4.21, Vue Router 4.3.2, Pinia 2.1.7, Axios 1.12.2, @stomp/stompjs 7.2.0, Leaflet 1.9.4, ApexCharts 1.5.3, Bootstrap 5.3.3, Vite 5.2.0
+**Frontend** : Vue.js 3.4.21, Vue Router 4.3.2, Pinia 2.1.7, Axios 1.12.2, @stomp/stompjs 7.2.0, Leaflet 1.9.4,<br>ApexCharts 1.5.3, Bootstrap 5.3.3, Vite 5.2.0
 
 **Collaboration** : Git, GitHub, Figma, Discord
 
