@@ -61,16 +61,16 @@
 
 ### 2단계 · Frontend
 
-- 템플릿 선정 및 팀 UI 기준 수립(벤처 마킹 : 무신사)
+- 템플릿 선정 및 팀 UI 기준 수립(벤치마킹 : 무신사)
 - 역할 기반 접근 제어 설계
-- Figima 디자인 작업
-- POS 앱 설계(벤처마킹 : Toss Pos)
-- 이벤트, 공지 UI 구현 
+- Figma 디자인 작업
+- POS 앱 설계(벤치마킹 : Toss Pos)
+- 공지·프로모션 UI 구현
 - 역할별 시나리오 점검을 통한 UI 오류 이슈화 및 품질 개선
 
 ### 3단계 · 협업
 
-- CRUD 가이드 라인 보완
+- CRUD 가이드라인 보완
 - WBS 일정 구조화
 - main/develop/개인 브랜치 전략 및 GitHub Actions 일정 관리
 - 팀 코딩 컨벤션 문서화 및 공유
@@ -163,7 +163,12 @@
 
 ### ERD
 
+<details>
+<summary>📊 ERD 보기</summary>
+
 ![HypeLink ERD](./doc/hypelinkERD.png)
+
+</details>
 
 
 
