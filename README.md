@@ -55,30 +55,28 @@
 
 ### 1단계 · Database
 
-- **요구사항 정의서 기반 도메인 분석**: 기획서·요구사항 정의서(`doc/HypeLink 요구사항 정의서.pdf`)를 검토하여 핵심 엔티티(매장, 상품, 재고, 발주, 배송, POS, 고객, AS 등)를 식별하고 관계를 정의
-- **ERD 설계 및 산출**: 정규화(1NF~3NF) 원칙에 따라 테이블 간 외래키·인덱스 설계; 최종 ERD를 `doc/hypelinkERD.png`로 문서화
-- **데이터 모델 기반 API 협의**: 설계된 스키마를 기준으로 Backend와 API 요청/응답 구조를 사전 협의하여 프론트엔드 연동 시 불일치 최소화
-- (구체적인 테이블 수·핵심 관계 설명은 아래 "빈칸 체크리스트" 참고)
+- 요구사항 정의서 기반 핵심 엔티티 도출 및 관계 정의
+- 정규화 원칙에 따른 ERD 설계 및 문서화
+- 설계 스키마 기반 백엔드와 API 구조 사전 협의
 
-### 2단계 · Frontend 
+### 2단계 · Frontend
 
-- **UI 템플릿 선정**: Bootstrap 5.3.3 기반 어드민 템플릿을 선정하고 Vue 3 프로젝트 구조에 맞게 커스터마이징 기준을 수립하여 팀 전체 UI 일관성 확보
-- **대시보드 앱 (`hypelinkMain`) 구조 설계**: 도메인별 라우트 파일 분리(`baseRoutes`, `storeRoutes`, `inventoryRoutes` 등 18개) 및 역할 기반 접근 제어(`permissions.js`) 구현
-- **POS 앱 (`hypelinkPos`) 화면 구현**: 결제(PortOne SDK 연동), 주문 내역, 재고 조회, 공지사항 4개 화면 구현
-- **역할별 대시보드 분기**: 본사(ADMIN), 서브관리자(MANAGER), 가맹점(BRANCH_MANAGER) 역할에 따라 `AdminDashboard.vue` / `StoreOwnerDashboard.vue`를 동적 렌더링
-- **실시간 지도 기반 배송 추적**: Leaflet 1.9.4를 활용한 GPS 기사 위치 시각화 및 Geocoding API 연동
-- **WebSocket 메신저**: STOMP.js(`@stomp/stompjs 7.2.0`)로 본사–가맹점 간 실시간 요청/응답 채널 구현
-- **데이터 시각화**: ApexCharts(vue3-apexcharts 1.5.3)로 매출·재고·고객 통계 차트 구성
-- **시나리오 기반 UI 검토**: 각 역할별 사용 흐름을 시나리오로 정리하고 화면 오류·UX 개선 사항 이슈화 및 수정
-- **UI 품질 개선**: 각 역할별 사용 흐름을 시나리오로 점검하여 화면 오류·레이아웃 불일치·UX 흐름 단절 사항을 이슈로 등록하고 수정
+- Bootstrap 5.3.3 어드민 템플릿 선정 및 팀 UI 기준 수립
+- 도메인별 라우트 파일 분리(18개) 및 역할 기반 접근 제어 구현
+- POS 앱 결제·주문·재고·공지 4개 화면 구현
+- 역할별 대시보드(본사/서브관리자/가맹점) 동적 렌더링
+- Leaflet 기반 GPS 기사 위치 실시간 시각화 및 배송 추적
+- STOMP.js로 본사–가맹점 간 WebSocket 메신저 구현
+- ApexCharts로 매출·재고·고객 통계 차트 구성
+- 역할별 시나리오 점검을 통한 UI 오류 이슈화 및 품질 개선
 
 ### 3단계 · 협업
 
-- **요구사항 우선 정리**: 프로젝트 착수 시점에 요구사항 정의서(`doc/HypeLink 요구사항 정의서.pdf`)를 기반으로 기능 우선순위를 팀 내 합의하고 WBS로 일정 구조화
-- **Git Actions 및 브랜치 전략 수립**: `main` / `develop` / `{팀원명}/BRANCH` 구조로 브랜치 분기 규칙 정의; GitHub Actions 기반 자동화 워크플로우 구성; PR 단위 코드 리뷰 체계 운영
-- **코딩 컨벤션(Coding Convention) 수립**: `[FEAT]` / `[FIX]` / `[REFA]` / `[DEV]` 커밋 태그 규칙, 파일명·컴포넌트명·스토어명 네이밍 규칙을 문서화하여 팀 전체에 공유·적용
-- **문서 작성 및 체계 구성**: WBS, 요구사항 정의서, 피그마, ERD, 시스템 아키텍처 문서를 `/doc` 폴더에 통합 관리; README 초안 작성 및 지속적 업데이트
-- **CI/CD 파이프라인 문서화**: GitHub Wiki에 Jenkins + Kaniko + Kubernetes 기반 파이프라인 운영 절차 작성
+- 요구사항 기반 기능 우선순위 합의 및 WBS 일정 구조화
+- main/develop/개인 브랜치 전략 및 GitHub Actions 워크플로우 구성
+- 커밋 태그·네이밍 규칙 등 팀 코딩 컨벤션 문서화 및 공유
+- WBS·ERD·아키텍처 등 프로젝트 산출물 /doc 폴더 통합 관리
+- GitHub Wiki에 Jenkins + Kaniko + Kubernetes CI/CD 파이프라인 문서화
 
 ---
 
