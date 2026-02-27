@@ -70,9 +70,9 @@
 
 ### 3단계 · 협업
 
--  CRUD 가이드 라인 보완
--  요구사항 기반 기능 우선순위 합의 및 WBS 일정 구조화
-- main/develop/개인 브랜치 전략 및 GitHub Actions 워크플로우 구성
+- CRUD 가이드 라인 보완
+- WBS 일정 구조화
+- main/develop/개인 브랜치 전략 및 GitHub Actions 일정 관리
 - 팀 코딩 컨벤션 문서화 및 공유
 
 ---
