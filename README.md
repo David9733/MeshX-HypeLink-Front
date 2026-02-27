@@ -165,8 +165,7 @@
 
 ![HypeLink ERD](./doc/hypelinkERD.png)
 
-> 주요 테이블: 매장(Store), 상품(Product), 재고(Inventory), 발주(PurchaseOrder), 배송(Shipment), POS기기(PosDevice), 고객(Customer), AS(ServiceRequest) 등
-> (테이블 수·핵심 관계 상세 설명은 빈칸 체크리스트 참고 — 본인 기여 내용으로 보완 필요)
+
 
 ---
 
