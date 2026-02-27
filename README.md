@@ -143,47 +143,19 @@
 
 ## 🛠️ 기술 스택
 
-### Frontend — 대시보드 (`hypelinkMain`)
+**DB** : MariaDB
 
-| 기술 | 버전 | 용도 |
-|------|------|------|
-| Vue.js | 3.4.21 | UI 프레임워크 |
-| Vue Router | 4.3.2 | SPA 라우팅 |
-| Pinia | 2.1.7 | 전역 상태 관리 |
-| Axios | 1.12.2 | HTTP 통신 |
-| @stomp/stompjs | 7.2.0 | WebSocket 메신저 |
-| Leaflet | 1.9.4 | GPS 지도 시각화 |
-| ApexCharts (vue3-apexcharts) | 1.5.3 | 데이터 차트 |
-| Bootstrap | 5.3.3 | UI 컴포넌트 |
-| Vite | 5.2.0 | 빌드 도구 |
+**Frontend** : Vue.js 3.4.21(UI 프레임워크) · Vue Router 4.3.2(SPA 라우팅) · Pinia 2.1.7(전역 상태 관리) · Axios 1.12.2(HTTP 통신) · @stomp/stompjs 7.2.0(WebSocket 메신저) · Leaflet 1.9.4(GPS 지도 시각화) · ApexCharts 1.5.3(데이터 차트) · Bootstrap 5.3.3(UI 컴포넌트) · Vite 5.2.0(빌드 도구)
 
-### Frontend — POS (`hypelinkPos`)
-
-| 기술 | 버전 | 용도 |
-|------|------|------|
-| Vue.js | 3.5.22 | UI 프레임워크 |
-| Vue Router | 4.5.1 | 라우팅 |
-| Pinia | 3.0.3 | 상태 관리 |
-| @portone/browser-sdk | 0.0.9 | 결제 처리 |
-| Axios | 1.12.2 | HTTP 통신 |
-| Vite | 7.1.7 | 빌드 도구 |
-
-### Backend
-
-![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
-![Spring Security](https://img.shields.io/badge/Spring%20Security-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white)
-![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
-![QueryDSL](https://img.shields.io/badge/QueryDSL-4479A1?style=for-the-badge&logoColor=white)
-![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=white)
-
-### Database & Infra
+**Collaboration** :
 
 ![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)
-![AWS S3](https://img.shields.io/badge/Amazon%20S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white)
-![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
-![Kaniko](https://img.shields.io/badge/Kaniko-2A2E35?style=for-the-badge&logo=docker&logoColor=white)
+![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
+![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)
 
 ---
 
