@@ -123,7 +123,7 @@
 
 - Domain별 Controller / Service / Repository / Model 구조
 - `utils`: 메서드 단위로 호출해서 사용하는 도구 모음
-- `common`: 상수·클래스 자체를 사용하는 공통 자원, Config는 `common`에 위치
+- `common`: 상수·클래스 자체를 사용하는 공통 자원(Config는 `common`에 위치)
 - 상수는 추상 클래스로 관리, 대문자 표기
 - `@NoArgsConstructor(access = AccessLevel.PROTECTED)` 접근 레벨 설정
 - Setter 사용 금지, 메서드로 값 변경
