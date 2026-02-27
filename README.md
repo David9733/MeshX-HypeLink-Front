@@ -72,7 +72,8 @@
 
 - CRUD 가이드라인 보완
 - WBS 일정 구조화
-- main/develop/개인 브랜치 전략 및 GitHub Actions 일정 관리
+- main/develop/개인 브랜치 전략 수립 및 GitHub PR 2인 이상 승인 후 병합 규칙 적용
+- GitHub Actions 워크플로우 구성
 - 팀 코딩 컨벤션 문서화 및 공유
 
 ---
