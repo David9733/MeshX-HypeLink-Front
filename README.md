@@ -1,4 +1,4 @@
-<h1 align="center"> HypeLink (MeshX) </h1>
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f4b43588-8a67-492b-b574-67f94bda449f" /><h1 align="center"> HypeLink (MeshX) </h1>
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/807a5735-e104-4bbe-adf5-b7a47830b0cf" width="400"/>
@@ -39,12 +39,14 @@
 
 ## 🎯 프로젝트 목적
 
-> **"오프라인 매장 관리의 복잡함을 데이터 중심으로 단순화한다."**
+ "오프라인 매장 관리의 복잡함을 데이터 중심으로 단순화한다."
+
+본사와 매장을 하나의 네트워크로 연결하여, 주문·재고·물류·매출·고객 데이터를 실시간으로 통합 관리할 수 있도록 설계되어 스파(SPA) 브랜드와 오프라인 직영점을 위한 B2B 통합 매장 관리 솔루션입니다.
 
 | 구분 | 내용 |
 |------|------|
 | **기존 방식** | 점포별로 재고·POS·고객 데이터가 분산되어 본사가 통합 현황을 파악하기 어려움, 본사와 가맹점 간 소통 채널 부재로 의사결정 지연 |
-| **HypeLink의 접근** | GPS 물류 추적, 고객 데이터 분석, WebSocket 실시간 소통을 하나의 플랫폼으로 통합 |
+| **본서비스** | GPS 물류 추적, 고객 데이터 분석, WebSocket 실시간 소통을 하나의 플랫폼으로 통합 |
 | **기대 효과** | 재고 손실 최소화, 장애 대응 속도 향상, 본사와 매장 간 정보 비대칭 해소 |
 
 ---
