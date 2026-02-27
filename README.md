@@ -145,12 +145,17 @@
 
 **DB** : MariaDB
 
-**Frontend** : Vue.js 3.4.21(UI 프레임워크) · Vue Router 4.3.2(SPA 라우팅) · Pinia 2.1.7(전역 상태 관리) · Axios 1.12.2(HTTP 통신) · @stomp/stompjs 7.2.0(WebSocket 메신저) · Leaflet 1.9.4(GPS 지도 시각화) · ApexCharts 1.5.3(데이터 차트) · Bootstrap 5.3.3(UI 컴포넌트) · Vite 5.2.0(빌드 도구)
+**Frontend** : Vue.js 3.4.21, Vue Router 4.3.2, Pinia 2.1.7, Axios 1.12.2, @stomp/stompjs 7.2.0, Leaflet 1.9.4, ApexCharts 1.5.3, Bootstrap 5.3.3, Vite 5.2.0
 
-**Collaboration** :  Git, GitHub, Figma, Discord
+**Collaboration** : Git, GitHub, Figma, Discord
 
 ![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)
 ![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Axios](https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white)
+![Socket.io](https://img.shields.io/badge/Socket.io-010101?style=for-the-badge&logo=socketdotio&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![Pinia](https://img.shields.io/badge/Pinia-FFD859?style=for-the-badge&logo=pinia&logoColor=black)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
