@@ -121,18 +121,31 @@
 
 ### Backend
 
+**패키지·구조**
 - Domain별 Controller / Service / Repository / Model 구조
-- Model 내부에 Entity / Dto 분리
-- Dto 명칭은 `Res` / `Req` 로 통일 (Dto 접미사 제거)
+- `utils`: 메서드 단위로 호출해서 사용하는 도구 모음
+- `common`: 상수·클래스 자체를 사용하는 공통 자원, Config는 `common`에 위치
+- 상수는 추상 클래스로 관리, 대문자 표기
+
+**클래스·객체 설계**
 - `@NoArgsConstructor(access = AccessLevel.PROTECTED)` 접근 레벨 설정
 - Setter 사용 금지, 메서드로 값 변경
 - Builder 패턴 사용
-- `BaseResponse` / `BaseException` / `GlobalExceptionHandler` 공통 처리
-- Exception Message는 도메인별 Enum으로 관리
 - `id`는 `Integer` 고정 (null 허용)
-- Service 클래스에 `@Transactional(readOnly = true)` 기본 적용, DB 변경 메서드에만 `@Transactional` 추가
-- 상수는 추상 클래스로 관리, 대문자 표기
+
+**DTO**
+- Model 내부에 Entity / Dto 분리
+- Dto 명칭은 `Res` / `Req` 로 통일 (Dto 접미사 제거)
 - Dto 변환 메서드 `toEntity` / `toDto` 고정
+
+**예외 처리**
+- `BaseResponse` / `BaseException` / `GlobalExceptionHandler` 공통 처리
+- `else` → 예외 처리로 끝냄 (분기 마지막은 반드시 예외를 던짐)
+- Exception Message는 도메인별 Enum으로 관리
+
+**트랜잭션·코딩 스타일**
+- Service 클래스에 `@Transactional(readOnly = true)` 기본 적용, DB 변경 메서드에만 `@Transactional` 추가
+- 메서드 간 빈 줄로 문단 개행
 - CamelCase 적용
 
 ---
