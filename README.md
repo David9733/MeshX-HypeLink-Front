@@ -109,7 +109,6 @@
 - 커밋 태그: `[FEAT]` 기능 완료 / `[DEV]` 개발 중 / `[REFA]` 리팩토링 / `[DOC]` 문서 / `[HOT]` 핫픽스
 - 개발 완료 시 `develop` 으로 PR → 아침 코드 리뷰 후 병합
 - 금요일: `develop` → `release` merge / 월요일: `release` → `main` merge
-- `release`에서 TDD 테스트 통과 후 `main` 배포
 
 ### Frontend
 
