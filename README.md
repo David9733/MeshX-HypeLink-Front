@@ -113,6 +113,43 @@
 
 ---
 
+## 📐 코딩 컨벤션
+
+### Git 전략
+
+- 브랜치 구조: `main` / `release` / `develop` / `{이름}/기능브랜치`
+- 커밋 태그: `[FEAT]` 기능 완료 / `[DEV]` 개발 중 / `[REFA]` 리팩토링 / `[DOC]` 문서 / `[HOT]` 핫픽스
+- 개발 완료 시 `develop` 으로 PR → 아침 코드 리뷰 후 병합
+- 금요일: `develop` → `release` merge / 월요일: `release` → `main` merge
+- `release`에서 TDD 테스트 통과 후 `main` 배포
+
+### Frontend
+
+- CSS 파일은 `assets`에 작성
+- `components`는 버튼·헤더·푸터 등 공통 UI (Bootstrap 기반)
+- `mainRouter` → 도메인별 개별 라우터 파일 분리
+- Axios plugin 사용, API 변수명은 `도메인 + Api` 형식
+- 페이지네이션 적용 (무한 스크롤 사용 안 함)
+- `script / template / styles` 순서 유지
+
+### Backend
+
+- Domain별 Controller / Service / Repository / Model 구조
+- Model 내부에 Entity / Dto 분리
+- Dto 명칭은 `Res` / `Req` 로 통일 (Dto 접미사 제거)
+- `@NoArgsConstructor(access = AccessLevel.PROTECTED)` 접근 레벨 설정
+- Setter 사용 금지, 메서드로 값 변경
+- Builder 패턴 사용
+- `BaseResponse` / `BaseException` / `GlobalExceptionHandler` 공통 처리
+- Exception Message는 도메인별 Enum으로 관리
+- `id`는 `Integer` 고정 (null 허용)
+- Service 클래스에 `@Transactional(readOnly = true)` 기본 적용, DB 변경 메서드에만 `@Transactional` 추가
+- 상수는 추상 클래스로 관리, 대문자 표기
+- Dto 변환 메서드 `toEntity` / `toDto` 고정
+- CamelCase 적용
+
+---
+
 ## 🛠️ 기술 스택
 
 ### Frontend — 대시보드 (`hypelinkMain`)
