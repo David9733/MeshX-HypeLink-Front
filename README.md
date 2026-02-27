@@ -73,9 +73,7 @@
 -  CRUD 가이드 라인 보완
 -  요구사항 기반 기능 우선순위 합의 및 WBS 일정 구조화
 - main/develop/개인 브랜치 전략 및 GitHub Actions 워크플로우 구성
-- 커밋 태그·네이밍 규칙 등 팀 코딩 컨벤션 문서화 및 공유
-- WBS·ERD·아키텍처 등 프로젝트 산출물 /doc 폴더 통합 관리
-- GitHub Wiki에 Jenkins + Kaniko + Kubernetes CI/CD 파이프라인 문서화
+- 팀 코딩 컨벤션 문서화 및 공유
 
 ---
 
