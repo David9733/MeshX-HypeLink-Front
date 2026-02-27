@@ -147,7 +147,7 @@
 
 **Frontend** : Vue.js 3.4.21(UI 프레임워크) · Vue Router 4.3.2(SPA 라우팅) · Pinia 2.1.7(전역 상태 관리) · Axios 1.12.2(HTTP 통신) · @stomp/stompjs 7.2.0(WebSocket 메신저) · Leaflet 1.9.4(GPS 지도 시각화) · ApexCharts 1.5.3(데이터 차트) · Bootstrap 5.3.3(UI 컴포넌트) · Vite 5.2.0(빌드 도구)
 
-**Collaboration** :
+**Collaboration** :  Git, GitHub, Figma, Discord
 
 ![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)
 ![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white)
