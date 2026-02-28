@@ -226,8 +226,8 @@
 |------|------|------|
 | 공지<br>화면 | `hypelinkMain/src/views/AnnouncementView.vue` | ADMIN·MANAGER 역할 작성·수정·삭제 가능<br>이미지 업로드 및 미리보기 지원 |
 | 역할별<br>접근<br>설계 | `hypelinkMain/src/stores/permissions.js`<br>`hypelinkMain/src/router/index.js` | 본사·서브관리자·가맹점 역할별로 사이드바<br>노출 메뉴 항목과 라우터 허용 경로를 별도 설계<br>사이드바 숨김만으로는 URL 직접 접근을 차단할 수 없어 라우터 가드에서 역할 검증을 추가 |
-| 프로모션 관리 | `hypelinkMain/src/views/PromotionManagementView.vue` | 제목·기간·상태별 검색·정렬·페이징 통합<br>진행중·예정·종료 상태 배지 시각화, 이미지 업로드 |
-| 프로모션-쿠폰 연결 | `hypelinkMain/src/api/promotion/index.js` | 프로모션 생성 시 couponId·couponType 포함 전송, 쿠폰 타입(PERCENTAGE·FIXED) 기반 자동 필터링으로 타입 불일치 방지 |
+| 프로모션 관리 | `hypelinkMain/src/views/PromotionManagementView.vue` | 제목·기간·상태별 검색·정렬·페이징 통합<br>진행중·예정·종료 상태 배지 시각화 |
+| 프로모션-쿠폰 연결 | `hypelinkMain/src/api/promotion/index.js` | 프로모션 생성 시 couponId·couponType 포함, 쿠폰 타입(PERCENTAGE·FIXED) 기반 자동 필터링으로 타입 불일치 방지 |
 | POS<br>설계 | `hypelinkPos/src/views/POSView.vue` | POS 벤치마킹 기반 UI/UX 설계<br>시나리오 점검을 통한 오류 이슈화 및 품질 개선 |
 
 ### 주요 화면
