@@ -166,8 +166,11 @@
 
 ## 🗄️ DB 아키텍처
 
-요구사항
-https://docs.google.com/spreadsheets/d/1qZhN56mVAsWf9jRP_JT05Aqzyx4zoN33SUV9FfViN5Y/edit?gid=0#gid=0
+| 자료 | 링크 |
+|------|------|
+| 📋 요구사항 정의서 | [Google Sheets 바로가기](https://docs.google.com/spreadsheets/d/1qZhN56mVAsWf9jRP_JT05Aqzyx4zoN33SUV9FfViN5Y/edit?gid=0#gid=0) |
+| 🎨 피그마 디자인 | [Figma 바로가기](https://www.figma.com/design/apT7cRFWE4TS6WcdayD1Tn/HypeLink?node-id=0-1&p=f) |
+| 📅 WBS | [Google Sheets 바로가기](https://docs.google.com/spreadsheets/d/1mL61NnegWfpQIzOi6-0N2FlGey2ylmu7KBUlyBUa-7o/edit?usp=sharing) |
 
 ### ERD
 
@@ -176,14 +179,7 @@ https://docs.google.com/spreadsheets/d/1qZhN56mVAsWf9jRP_JT05Aqzyx4zoN33SUV9FfVi
 
 <img width="6098" height="6796" alt="hypelinkERD" src="https://github.com/user-attachments/assets/391c4cf5-4d06-4a82-9486-6aa7aa566eea" />
 
-
 </details>
-피그마
-https://www.figma.com/design/apT7cRFWE4TS6WcdayD1Tn/HypeLink?node-id=0-1&p=f
-
-WBS
-https://docs.google.com/spreadsheets/d/1mL61NnegWfpQIzOi6-0N2FlGey2ylmu7KBUlyBUa-7o/edit?usp=sharing
----
 
 ---
 
@@ -333,11 +329,12 @@ docker build -t hypelink-front .
 docker run -p 80:80 hypelink-front
 ```
 
-참고자료 
-기획서
-[HypeLink 기획서.pdf](https://github.com/user-attachments/files/25619989/HypeLink.pdf)
-발표
-[meshX 최종 발표 PPT.pdf](https://github.com/user-attachments/files/25619993/meshX.PPT.pdf)
+## 📎 참고자료
+
+| 자료 | 링크 |
+|------|------|
+| 📄 기획서 | [HypeLink 기획서.pdf](https://github.com/user-attachments/files/25619989/HypeLink.pdf) |
+| 🎤 발표 PPT | [meshX 최종 발표 PPT.pdf](https://github.com/user-attachments/files/25619993/meshX.PPT.pdf) |
 
 
 
