@@ -222,7 +222,7 @@
 
 ## 🔑 핵심 구현 포인트
 
-| 항목 | 위치 | 설명 |
+| 항목&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | 위치 | 설명 |
 |------|------|------|
 | 공지<br>화면 | `hypelinkMain/src/views/AnnouncementView.vue` | ADMIN·MANAGER 역할 작성·수정·삭제 가능<br>이미지 업로드 및 미리보기 지원 |
 | 역할별<br> 접근 설계 | `hypelinkMain/src/stores/permissions.js`<br>`hypelinkMain/src/router/index.js` | 본사·서브관리자·가맹점 역할별로 사이드바<br>노출 메뉴 항목과 라우터 허용 경로를 설계<br>사이드바 숨김만으로는 URL 직접 접근을 차단할 수 없어 라우터 가드에서 역할 검증을 추가 |
