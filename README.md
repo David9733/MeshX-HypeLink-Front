@@ -229,6 +229,67 @@
 | 프로모션 관리 | `hypelinkMain/src/views/PromotionManagementView.vue` | 제목·기간·상태별 검색·정렬·페이징 통합, 진행중·예정·종료 상태 배지 시각화, 이미지 업로드 |
 | 프로모션-쿠폰 연결 | `hypelinkMain/src/api/promotion/index.js` | 프로모션 생성 시 couponId·couponType 포함 전송, 쿠폰 타입(PERCENTAGE·FIXED) 기반 자동 필터링으로 타입 불일치 방지 |
 | POS<br>설계 | `hypelinkPos/src/views/POSView.vue` | POS 벤치마킹 기반 UI/UX 설계, 시나리오 점검을 통한 오류 이슈화 및 품질 개선 |
+## 🔑 핵심 구현 포인트
+
+<table>
+  <thead>
+    <tr>
+      <th width="16%">항목</th>
+      <th width="44%">위치</th>
+      <th width="40%">설명</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td align="center"><b>공지<br/>화면</b></td>
+      <td><code>hypelinkMain/src/views/AnnouncementView.vue</code></td>
+      <td>
+        ADMIN·MANAGER 역할 작성·수정·삭제 가능<br/>
+        이미지 업로드 및 미리보기 지원
+      </td>
+    </tr>
+
+    <tr>
+      <td align="center"><b>역할별<br/>접근 제어 설계</b></td>
+      <td>
+        <code>hypelinkMain/src/stores/permissions.js</code><br/>
+        <code>hypelinkMain/src/router/index.js</code>
+      </td>
+      <td>
+        본사·서브관리자·가맹점 역할별로 사이드바 노출 메뉴와 라우터 허용 경로를 별도 설계<br/>
+        사이드바 숨김만으로는 URL 직접 접근 차단이 어려워, 라우터 가드에서 역할 검증 추가
+      </td>
+    </tr>
+
+    <tr>
+      <td align="center"><b>프로모션<br/>관리</b></td>
+      <td><code>hypelinkMain/src/views/PromotionManagementView.vue</code></td>
+      <td>
+        제목·기간·상태별 검색·정렬·페이징 통합<br/>
+        진행중·예정·종료 상태 배지 시각화, 이미지 업로드
+      </td>
+    </tr>
+
+    <tr>
+      <td align="center"><b>프로모션<br/>-쿠폰 연결</b></td>
+      <td><code>hypelinkMain/src/api/promotion/index.js</code></td>
+      <td>
+        프로모션 생성 시 couponId·couponType 포함 전송<br/>
+        쿠폰 타입(PERCENTAGE·FIXED) 기반 자동 필터링으로 타입 불일치 방지
+      </td>
+    </tr>
+
+    <tr>
+      <td align="center"><b>POS<br/>설계</b></td>
+      <td><code>hypelinkPos/src/views/POSView.vue</code></td>
+      <td>
+        POS 벤치마킹 기반 UI/UX 설계<br/>
+        시나리오 점검을 통한 오류 이슈화 및 품질 개선
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ### 주요 화면
 
