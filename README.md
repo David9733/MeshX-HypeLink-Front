@@ -141,13 +141,15 @@
 
 ## 🛠️ 기술 스택
 
-**DB** : MariaDB
+**DB** : MariaDB, Redis, AWS S3
 
 **Frontend** : Vue.js 3.4.21+3.5.22, Vue Router 4.3.2+4.5.1, Pinia 2.1.7+3.0.3, Axios 1.12.2, @stomp/stompjs 7.2.0,<br>Leaflet 1.9.4, ApexCharts 4.0.0 (vue3-apexcharts 1.5.3), Bootstrap 5.3.3, @portone/browser-sdk 0.0.9, uuid 13.0.0,<br>Vite 5.2.0+7.1.7
 
 **Collaboration** : Git, GitHub, Figma, Discord
 
 ![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+![Amazon S3](https://img.shields.io/badge/Amazon_S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
