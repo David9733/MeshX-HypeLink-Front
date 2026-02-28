@@ -18,7 +18,7 @@
 | **진행 기간** | 2025.09 ~ 2025.10 |
 | **팀 인원** | 4명 |
 | **내 역할** | DB 설계(ERD/요구사항), POS·공지·이벤트 UI 설계 · UI 품질 개선, Git Actions 관리, 코딩 컨벤션 확립 |
-| **핵심 기술** | Vue 3, MariaDB, GitHub Actions, Gemini CLI, Claude CLI |
+| **핵심 기술** | Vue 3, Vite, MariaDB, GitHub Actions |
 
 ---
 
