@@ -301,7 +301,7 @@
 ```bash
 cd hypelinkMain
 npm install
-npm run dev       # 개발 서버 (http://localhost:5173)
+npm run dev       # 개발 서버
 npm run build     # 프로덕션 빌드
 ```
 
@@ -314,21 +314,6 @@ npm run dev       # 개발 서버
 npm run build     # 프로덕션 빌드
 ```
 
-### 테스트 계정
-
-| 역할 | ID | PW |
-|------|----|----|
-| 본사 (ADMIN) | `hq@company.com` | `1234` |
-| 서브관리자 (MANAGER) | `manager@hypelink.com` | `1234` |
-| 가맹점 (BRANCH_MANAGER) | `gangnam@hypelink.com` | `1234` |
-| POS 단말기 | `pos.gangnam.01@hypelink.com` | `1234` |
-
-### Docker (Nginx)
-
-```bash
-docker build -t hypelink-front .
-docker run -p 80:80 hypelink-front
-```
 
 ## 📎 참고자료
 
