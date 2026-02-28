@@ -224,7 +224,7 @@
 
 | 항목 | 위치 | 설명 |
 |------|------|------|
-| 공지<br>화면 | `hypelinkMain/src/views/AnnouncementView.vue` | ADMIN·MANAGER 역할 작성·수정·삭제 가능<br>이미지 업로드 및 미리보기 지원 |
+| 공지 <br> 화면 | `hypelinkMain/src/views/AnnouncementView.vue` | ADMIN·MANAGER 역할 작성·수정·삭제 가능<br>이미지 업로드 및 미리보기 지원 |
 | 역할별<br> 접근 설계 | `hypelinkMain/src/stores/permissions.js`<br>`hypelinkMain/src/router/index.js` | 본사·서브관리자·가맹점 역할별로 사이드바<br>노출 메뉴 항목과 라우터 허용 경로를 설계<br>사이드바 숨김만으로는 URL 직접 접근을 차단할 수 없어 라우터 가드에서 역할 검증을 추가 |
 | 프로모션<br>관리 | `hypelinkMain/src/views/PromotionManagementView.vue` | 제목·기간·상태별 검색·정렬·페이징 통합<br>진행중·예정·종료 상태 배지 시각화 |
 | 프로모션<br>쿠폰연결 | `hypelinkMain/src/api/promotion/index.js` | 프로모션 생성 couponId·couponType 포함<br>쿠폰 타입(PERCENTAGE·FIXED) 기반 자동<br>필터링으로 타입 불일치 방지 |
