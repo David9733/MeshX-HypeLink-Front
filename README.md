@@ -328,20 +328,3 @@ docker build -t hypelink-front .
 docker run -p 80:80 hypelink-front
 ```
 
----
-
-## 📎 참고자료
-
-| 자료 | 링크 |
-|------|------|
-| 피그마 디자인 | [Figma 바로가기](https://www.figma.com/design/apT7cRFWE4TS6WcdayD1Tn/HypeLink?node-id=0-1&p=f&t=s8E79kwSqskjhKOT-0) |
-| 피그마 캡처 | [doc/Fiqma.png](./doc/Fiqma.png) |
-| ERD | [doc/hypelinkERD.png](./doc/hypelinkERD.png) |
-| 요구사항 정의서 | [doc/HypeLink 요구사항 정의서.pdf](./doc/HypeLink%20요구사항%20정의서.pdf) |
-| 기획서 | [doc/HypeLink 기획서.pdf](./doc/HypeLink%20기획서.pdf) |
-| WBS | [doc/WBS.pdf](./doc/WBS.pdf) |
-| V1 시스템 아키텍처 | [doc/시스템 아키텍처.png](./doc/시스템%20아키텍처.png) |
-| V2 MSA 아키텍처 | [doc/MSA 시스템 아키텍처.png](./doc/MSA%20시스템%20아키텍처%20.png) |
-| CI/CD 파이프라인 문서 | [GitHub Wiki](https://github.com/beyond-sw-camp/be17-fin-MeshX-HypeLink-FE/wiki/HypeLink-CI-CD-%ED%8C%8C%EC%9D%B4%ED%94%84%EB%9D%BC%EC%9D%B8-%EB%AC%B8%EC%84%9C) |
-| 대시보드 서비스 | [meshx.store](https://www.meshx.store) |
-| POS 서비스 | [meshx.shop](https://www.meshx.shop) |
