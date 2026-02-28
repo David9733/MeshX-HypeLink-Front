@@ -202,7 +202,7 @@
 | **Vue 3 Composition API** | 낮은 학습 곡선과 빠른 개발 속도, 기능 단위로 로직을 분리하여 역할별 대시보드처럼 재사용 컴포넌트 구성이 용이 |
 | **Pinia** | Vue 3 공식 상태 관리 라이브러리, 인증·권한·모달·토스트 등 복수 스토어를 명확히 분리해 관리 |
 | **Vite** | 빠른 빌드 속도와 HMR(Hot Module Replacement) 지원으로 개발 생산성 향상 |
-| **@stomp/stompjs** | SockJS 없이도 WebSocket 위에서 구독·발행 패턴을 구현할 수 있어 본사–가맹점 실시간 메신저에 채택 |
+| **@stomp/stompjs** | WebSocket 위에 STOMP 프로토콜을 적용해 채널 기반 구독·발행(pub/sub) 메시징을 구현 |
 | **Leaflet** | 순수 JS 지도 라이브러리로 번들 크기가 작고, GPS 좌표 기반 마커/경로 렌더링이 간단 |
 
 </details>
