@@ -171,7 +171,8 @@
 <details>
 <summary>📊 ERD 보기</summary>
 
-![HypeLink ERD](./doc/hypelinkERD.png)
+<img width="6098" height="6796" alt="hypelinkERD" src="https://github.com/user-attachments/assets/391c4cf5-4d06-4a82-9486-6aa7aa566eea" />
+
 
 </details>
 
