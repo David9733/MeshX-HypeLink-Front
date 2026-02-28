@@ -229,6 +229,7 @@
 | 프로모션 관리 | `hypelinkMain/src/views/PromotionManagementView.vue` | 제목·기간·상태별 검색·정렬·페이징 통합, 진행중·예정·종료 상태 배지 시각화, 이미지 업로드 |
 | 프로모션-쿠폰 연결 | `hypelinkMain/src/api/promotion/index.js` | 프로모션 생성 시 couponId·couponType 포함 전송, 쿠폰 타입(PERCENTAGE·FIXED) 기반 자동 필터링으로 타입 불일치 방지 |
 | POS<br>설계 | `hypelinkPos/src/views/POSView.vue` | POS 벤치마킹 기반 UI/UX 설계, 시나리오 점검을 통한 오류 이슈화 및 품질 개선 |
+
 ## 🔑 핵심 구현 포인트
 
 <table>
