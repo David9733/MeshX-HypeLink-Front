@@ -296,7 +296,7 @@
 
 ## 🚀 실행 및 테스트
 
-### 대시보드 앱 (`hypelinkMain`)
+### (`hypelinkMain`)
 
 ```bash
 cd hypelinkMain
@@ -305,7 +305,7 @@ npm run dev       # 개발 서버
 npm run build     # 프로덕션 빌드
 ```
 
-### POS 앱 (`hypelinkPos`)
+### (`hypelinkPos`)
 
 ```bash
 cd hypelinkPos
