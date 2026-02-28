@@ -183,14 +183,36 @@
 
 ## 🤔 기술 선택 이유
 
+<details>
+<summary>Database</summary>
+
 | 선택 | 이유 |
 |------|------|
-| **Database — MariaDB** | MySQL과 완전 호환되는 오픈소스 RDBMS로 팀 내 학습 비용이 낮음<br>매장·재고·발주·고객 데이터가 명확한 관계(FK)로 연결되는 구조에 관계형 DB가 적합하다고 판단<br>QueryDSL과 결합하여 복합 조건 통계 쿼리(연령별 매출, 재고 회전율 등)를 타입 안전하게 작성 |
+| **MariaDB** | MySQL과 완전 호환되는 오픈소스 RDBMS로 팀 내 학습 비용이 낮음<br>매장·재고·발주·고객 데이터가 명확한 관계(FK)로 연결되는 구조에 관계형 DB가 적합하다고 판단<br>QueryDSL과 결합하여 복합 조건 통계 쿼리(연령별 매출, 재고 회전율 등)를 타입 안전하게 작성 |
+
+</details>
+
+<details>
+<summary>Frontend</summary>
+
+| 선택 | 이유 |
+|------|------|
 | **Vue 3 Composition API** | 기능 단위로 로직을 분리하여 역할별 대시보드(AdminDashboard / StoreOwnerDashboard)처럼 재사용 컴포넌트 구성이 용이 |
 | **Pinia** | Vuex 대비 간결한 API와 DevTools 지원으로 인증(auth), 권한(permissions), 모달(modal), 토스트(toast) 등 복수 스토어를 명확히 분리해 관리 |
 | **@stomp/stompjs** | SockJS 없이도 WebSocket 위에서 구독·발행 패턴을 구현할 수 있어 본사–가맹점 실시간 메신저에 채택 |
 | **Leaflet** | 순수 JS 지도 라이브러리로 번들 크기가 작고, GPS 좌표 기반 마커/경로 렌더링이 간단 |
-| **GitHub Flow + 문서화** | `main` / `develop` / `{이름}/BRANCH` 3단계 브랜치 전략으로 기능 개발과 통합을 분리<br>PR 기반 코드 리뷰로 병합 전 오류 사전 차단<br>기획서·ERD·WBS·피그마·아키텍처를 통합 관리하여 팀원 간 정보 공유 일원화 |
+
+</details>
+
+<details>
+<summary>Collaboration</summary>
+
+| 선택 | 이유 |
+|------|------|
+| **GitHub Flow** | `main` / `develop` / `{이름}/BRANCH` 3단계 브랜치 전략으로 기능 개발과 통합을 분리<br>PR 기반 코드 리뷰로 병합 전 오류 사전 차단 |
+| **문서화 체계** | 기획서·ERD·WBS·피그마·아키텍처를 통합 관리하여 팀원 간 정보 공유 일원화 |
+
+</details>
 
 ---
 
