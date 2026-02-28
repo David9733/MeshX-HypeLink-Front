@@ -166,7 +166,7 @@
 
 ## 🗄️ DB 아키텍처
 
-📋 요구사항 정의서 : [Google Sheets 바로가기](https://docs.google.com/spreadsheets/d/1qZhN56mVAsWf9jRP_JT05Aqzyx4zoN33SUV9FfViN5Y/edit?gid=0#gid=0)
+[요구사항 정의서 바로가기](https://docs.google.com/spreadsheets/d/1qZhN56mVAsWf9jRP_JT05Aqzyx4zoN33SUV9FfViN5Y/edit?gid=0#gid=0)
 
 <details>
 <summary>📊 ERD 보기</summary>
@@ -175,9 +175,9 @@
 
 </details>
 
-🎨 Figma : [바로가기](https://www.figma.com/design/apT7cRFWE4TS6WcdayD1Tn/HypeLink?node-id=0-1&p=f)
+[Figma 바로가기](https://www.figma.com/design/apT7cRFWE4TS6WcdayD1Tn/HypeLink?node-id=0-1&p=f)
 
-📅 WBS : [바로가기](https://docs.google.com/spreadsheets/d/1mL61NnegWfpQIzOi6-0N2FlGey2ylmu7KBUlyBUa-7o/edit?usp=sharing)
+[WBS 바로가기](https://docs.google.com/spreadsheets/d/1mL61NnegWfpQIzOi6-0N2FlGey2ylmu7KBUlyBUa-7o/edit?usp=sharing)
 
 ---
 
