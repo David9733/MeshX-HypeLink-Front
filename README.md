@@ -329,9 +329,9 @@ docker run -p 80:80 hypelink-front
 
 ## 📎 참고자료
 
-[HypeLink 기획서.pdf](https://github.com/user-attachments/files/25619989/HypeLink.pdf)
+[기획서](https://github.com/user-attachments/files/25619989/HypeLink.pdf)
 
-[meshX 최종 발표 PPT.pdf](https://github.com/user-attachments/files/25619993/meshX.PPT.pdf)
+[발표 PPT](https://github.com/user-attachments/files/25619993/meshX.PPT.pdf)
 
 
 
