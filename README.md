@@ -1,8 +1,5 @@
-
-
 <div align="center">
   <img src="https://github.com/user-attachments/assets/807a5735-e104-4bbe-adf5-b7a47830b0cf" width="400"/>
-  <h1>HypeLink</h1>
 </div>
 
 
@@ -303,13 +300,10 @@ npm run dev       # 개발 서버
 npm run build     # 프로덕션 빌드
 ```
 
+---
 
 ## 📎 참고자료
 
 [기획서 보기](https://github.com/user-attachments/files/25619989/HypeLink.pdf)
 
 [발표 PPT 보기](https://github.com/user-attachments/files/25619993/meshX.PPT.pdf)
-
-
-
-
