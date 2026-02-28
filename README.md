@@ -166,13 +166,7 @@
 
 ## 🗄️ DB 아키텍처
 
-| 자료 | 링크 |
-|------|------|
-| 📋 요구사항 정의서 | [Google Sheets 바로가기](https://docs.google.com/spreadsheets/d/1qZhN56mVAsWf9jRP_JT05Aqzyx4zoN33SUV9FfViN5Y/edit?gid=0#gid=0) |
-| 🎨 피그마 디자인 | [Figma 바로가기](https://www.figma.com/design/apT7cRFWE4TS6WcdayD1Tn/HypeLink?node-id=0-1&p=f) |
-| 📅 WBS | [Google Sheets 바로가기](https://docs.google.com/spreadsheets/d/1mL61NnegWfpQIzOi6-0N2FlGey2ylmu7KBUlyBUa-7o/edit?usp=sharing) |
-
-### ERD
+📋 요구사항 정의서 : [Google Sheets 바로가기](https://docs.google.com/spreadsheets/d/1qZhN56mVAsWf9jRP_JT05Aqzyx4zoN33SUV9FfViN5Y/edit?gid=0#gid=0)
 
 <details>
 <summary>📊 ERD 보기</summary>
@@ -180,6 +174,10 @@
 <img width="6098" height="6796" alt="hypelinkERD" src="https://github.com/user-attachments/assets/391c4cf5-4d06-4a82-9486-6aa7aa566eea" />
 
 </details>
+
+🎨 Figma : [바로가기](https://www.figma.com/design/apT7cRFWE4TS6WcdayD1Tn/HypeLink?node-id=0-1&p=f)
+
+📅 WBS : [바로가기](https://docs.google.com/spreadsheets/d/1mL61NnegWfpQIzOi6-0N2FlGey2ylmu7KBUlyBUa-7o/edit?usp=sharing)
 
 ---
 
