@@ -164,7 +164,7 @@
 
 ---
 
-## 🗄️ DB 아키텍처
+## 📐 설계 문서
 
 [요구사항 정의서 바로가기](https://docs.google.com/spreadsheets/d/1qZhN56mVAsWf9jRP_JT05Aqzyx4zoN33SUV9FfViN5Y/edit?gid=0#gid=0)
 
