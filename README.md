@@ -141,11 +141,11 @@
 
 ## 🛠️ 기술 스택
 
-**DB** : MariaDB, Redis, AWS S3
+**DB** : MariaDB, Redis, AWS S3(Object Storage)
 
 **Frontend** : Vue.js 3.4.21+3.5.22, Vue Router 4.3.2+4.5.1, Pinia 2.1.7+3.0.3, Axios 1.12.2, @stomp/stompjs 7.2.0,<br>Leaflet 1.9.4, ApexCharts 4.0.0 (vue3-apexcharts 1.5.3), Bootstrap 5.3.3, @portone/browser-sdk 0.0.9, uuid 13.0.0,<br>Vite 5.2.0+7.1.7
 
-**Collaboration** : Git, GitHub, Figma, Discord
+**Collaboration** : Git, GitHub, GitHub Actions, Figma, Discord
 
 ![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
@@ -159,6 +159,7 @@
 ![Axios](https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 ![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)
 
